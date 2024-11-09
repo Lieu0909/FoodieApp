@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/dialogId"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#DFF4F9"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_gravity="center|center_horizontal"
+        android:orientation="horizontal"
+        android:weightSum="2">
+
+        <TextView
+            android:id="@+id/date"
+            android:layout_width="269dp"
+            android:layout_height="35dp"
+            android:layout_weight="0.8"
+            android:textColor="#000000"
+            android:textSize="24sp" />
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/edit"
+            android:layout_width="28dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center"
+            android:layout_weight="0.8"
+            android:background="#BDEFF4"
+            android:backgroundTint="#BDEFF4"
+            android:clickable="true"
+            app:backgroundTint="#BDEFF4"
+            app:borderWidth="0.0dp"
+            app:elevation="0dp"
+            app:fabCustomSize="45dp"
+            app:fabSize="normal"
+            app:srcCompat="@drawable/edit" />
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/delete"
+            android:layout_width="30dp"
+            android:layout_height="25dp"
+            android:layout_gravity="center"
+            android:background="#BDEFF4"
+            android:backgroundTint="#BDEFF4"
+            android:clickable="true"
+            android:fadingEdgeLength="0dp"
+            android:visibility="visible"
+            app:backgroundTint="#BDEFF4"
+            app:borderWidth="0.0dp"
+            app:elevation="0dp"
+            app:fabCustomSize="30dp"
+            app:fabSize="normal"
+            app:maxImageSize="25dp"
+            app:rippleColor="#BDEFF4"
+            app:srcCompat="@drawable/close" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/day"
+        android:layout_width="250dp"
+        android:layout_height="35dp"
+        android:textColor="#000000"
+        android:textSize="24sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/textView9"
+            android:layout_width="11dp"
+            android:layout_height="35dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_weight="1"
+            android:background="#FFFECE"
+            android:gravity="center"
+            android:text="BREAKFAST"
+            android:textColor="#F7141414"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textView10"
+            android:layout_width="11dp"
+            android:layout_height="35dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_weight="1"
+            android:background="#FFFECE"
+            android:gravity="center"
+            android:text="LUNCH"
+            android:textColor="#000000"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textView11"
+            android:layout_width="11dp"
+            android:layout_height="35dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_weight="1"
+            android:background="#FFFECE"
+            android:gravity="center"
+            android:text="DINNER"
+            android:textColor="#000000"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:background="@drawable/relative_border"
+        android:baselineAligned="false"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/breakfast"
+            android:layout_width="11dp"
+            android:layout_height="100dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_weight="0.25"
+            android:background="#FFFECE"
+            android:clickable="true"
+            android:contextClickable="true"
+            android:gravity="center"
+            android:textColor="#000000" />
+
+        <TextView
+            android:id="@+id/lunch"
+            android:layout_width="11dp"
+            android:layout_height="100dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_weight="0.25"
+            android:background="#FFFECE"
+            android:clickable="true"
+            android:contextClickable="true"
+            android:gravity="center"
+            android:textColor="#000000" />
+
+        <TextView
+            android:id="@+id/dinner"
+            android:layout_width="11dp"
+            android:layout_height="100dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_weight="0.25"
+            android:background="#FFFECE"
+            android:clickable="true"
+            android:contextClickable="true"
+            android:gravity="center"
+            android:textColor="#000000" />
+    </LinearLayout>
+
+
+</LinearLayout>

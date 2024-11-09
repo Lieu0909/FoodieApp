@@ -1,0 +1,10 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.example.tanvir.diary.Recipes.RecipesMainActivity">
+
+    <item
+        android:id="@+id/logout_button"
+        android:title="Logout"
+        />
+</menu>

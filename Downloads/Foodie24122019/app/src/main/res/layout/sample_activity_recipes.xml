@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RecipesActivity">
+
+    <Button
+        android:id="@+id/btnMainEntree"
+        android:layout_width="420dp"
+        android:layout_height="219dp"
+        android:background="@drawable/mainentree"
+        android:text="Main Entree"
+        android:textColor="#FFFFFF"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toTopOf="@+id/btnBread"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btnBread"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@drawable/bread1"
+        android:text="Bread"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/btnDesserts"
+        app:layout_constraintEnd_toStartOf="@+id/btnAppetizers"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/btnMainEntree" />
+
+    <Button
+        android:id="@+id/btnAppetizers"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@drawable/appetizers1"
+        android:text="Appetizers"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/btnDesserts"
+        app:layout_constraintEnd_toStartOf="@+id/btnDrinks"
+        app:layout_constraintStart_toEndOf="@+id/btnBread"
+        app:layout_constraintTop_toBottomOf="@+id/btnMainEntree"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <Button
+        android:id="@+id/btnDrinks"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@drawable/drinks1"
+        android:text="Drinks"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/btnDesserts"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/btnAppetizers"
+        app:layout_constraintTop_toBottomOf="@+id/btnMainEntree" />
+
+    <Button
+        android:id="@+id/btnDesserts"
+        android:layout_width="417dp"
+        android:layout_height="207dp"
+        android:background="@drawable/desserts"
+        android:text="Desserts"
+        android:textColor="#FFFFFF"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnDrinks" />
+</androidx.constraintlayout.widget.ConstraintLayout>
